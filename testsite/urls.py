@@ -16,8 +16,8 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-#import function from testsite.views
-from testsite.view import hello_world
+#import functions from testsite.views
+from testsite.view import hello_world, root_page, random_number
 
 #regular expressions
 #views as raw string
@@ -27,4 +27,6 @@ from testsite.view import hello_world
 urlpatterns = [
     url(r'^admin/$', admin.site.urls),
     url(r'^helloworld/$', hello_world),
+    url(r'^$', root_page),
+    url(r'^random/(\d+)/$', random_number),
 ]

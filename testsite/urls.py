@@ -17,7 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 
 #import function from testsite.views
-from testsite.views import hello_world
+from testsite.view import hello_world
 
 #regular expressions
 #views as raw string

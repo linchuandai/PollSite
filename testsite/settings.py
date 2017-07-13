@@ -10,6 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
+#Create super user using:
+#python manage.py createsuperuser
+
 #username sysadmin
 #password Ldpassword
 
@@ -32,6 +35,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+#to update model:
+# stop server
+#python manage.py makemigrations "application name"
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -77,6 +83,9 @@ WSGI_APPLICATION = 'testsite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
+
+#make server:
+#python manage.py sqlmigrate 'app name' 0001 (or database number)
 
 DATABASES = {
     'default': {

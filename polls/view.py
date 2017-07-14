@@ -43,7 +43,10 @@ def vote(request,question_id):
         return HttpResponseRedirect(reverse('polls:results', args=(question_id,)))
 
 
+
 '''
+Changed to generic views
+
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
 
